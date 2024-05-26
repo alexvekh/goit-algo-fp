@@ -148,7 +148,7 @@ llist.insert_at_end(20)
 llist.insert_at_end(25)
 
 # Друк зв'язного списку
-print("\n  Зв'язний список:")
+print("\n  Linked list:")
 llist.print_list()
 
 # Видаляємо вузол
@@ -163,13 +163,15 @@ llist.print_list()
 # if element:
 #   print(element.data)
 
-llist.sort()
-print("\n  Sorted linked list:")
+llist.reverse()
+print("\n  Reversed linked list function demo:")
 llist.print_list()
 
-llist.reverse()
-print("\n  Reversed linked list:")
+llist.sort()
+print("\n  Sorted linked list function demo:")
 llist.print_list()
+
+
 
 # merging sort
 one_list = LinkedList()
@@ -183,7 +185,14 @@ other_list = LinkedList()
 other_list.insert_at_beginning(6)
 other_list.insert_at_end(2)
 other_list.insert_at_end(8)
+other_list.insert_at_end(16)
+
+print("\n  2 linked lists merging demo: ")
+print("\nOne list:")
+one_list.print_list()
+print("\nOther list:")
+other_list.print_list()
 
 merged = merge_linked_lists(one_list, other_list)
-print("\n  Merged 2 linked lists:")
+print("\nMerged and sorted:")
 merged.print_list()
