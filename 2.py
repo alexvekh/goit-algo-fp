@@ -28,9 +28,6 @@ def koch_curve(t, level, size):
         t.forward(size)
 
             
-
-
-
 def draw_koch_curve(order, size=300):
     window = turtle.Screen()
     window.bgcolor("skyblue")
@@ -43,11 +40,11 @@ def draw_koch_curve(order, size=300):
     t.left(90)
     t.pendown()
 
-   
     koch_curve(t, order, size/1.7)
     # t.right(120)
 
     window.mainloop()
+
 
 # draw_koch_curve(7)
 
